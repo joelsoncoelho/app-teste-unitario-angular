@@ -8,7 +8,6 @@ fdescribe(UniqueIdService.name, () => {
     service = new UniqueIdService();
   });
 
-
   it(`#${UniqueIdService.prototype.genereteUniqueIdWithPrefix.name }
   should generate id when called with prefix.`, ()=>{
     const id = service.genereteUniqueIdWithPrefix('app');
