@@ -1,8 +1,9 @@
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LikeWidgetComponent } from './like-widget.component';
 import { UniqueIdService } from '../../services/unique-id/unique-id.service';
+
 
 @NgModule({
   declarations: [LikeWidgetComponent],
@@ -13,6 +14,7 @@ import { UniqueIdService } from '../../services/unique-id/unique-id.service';
   exports: [
     LikeWidgetComponent
   ],
-  providers: [UniqueIdService]
+  providers: [UniqueIdService],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class LikeWidgetModule { }

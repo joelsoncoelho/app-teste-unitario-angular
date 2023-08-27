@@ -1,6 +1,6 @@
 import { UniqueIdService } from "./unique-id.service";
 
-fdescribe(UniqueIdService.name, () => {
+describe(UniqueIdService.name, () => {
 
   let service: UniqueIdService;
 
