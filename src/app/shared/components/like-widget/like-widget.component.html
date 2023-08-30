@@ -1,4 +1,5 @@
-<div class="like-widget-container" (click)="like()" (keyup.enter)="like()">
+<div class="like-widget-container"
+  (appAction)="like()">
   <fa-icon [icon]="fonts.faThumbsUp"
   tabindex="0"
   [attr.aria-describedby]="id"
