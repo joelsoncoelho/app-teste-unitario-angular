@@ -21,6 +21,7 @@ describe(ActionDirective.name, () => {
   });
 
   it(`(D) (@Output appAction) should emit event with payload when ENTER key is pressed`, () => {
+   // const divEl: HTMLElement = fixture.nativeElement.querySelector('.dummy-component');
     const divEl = fixture.debugElement.query(By.directive(ActionDirective)).nativeElement;
     const event = new KeyboardEvent('keyup', { key: 'Enter' });
     divEl.dispatchEvent(event);

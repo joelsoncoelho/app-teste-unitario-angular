@@ -86,12 +86,5 @@ describe(PhotoFrameComponent.name, () => {
 
   });
 
-
-
-
-
-
-
-
 });
 
